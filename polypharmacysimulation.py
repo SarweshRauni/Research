@@ -151,7 +151,6 @@ total_counts = data_all_years[disease_cols + medication_cols].sum()
 exclusivity = (state_prevalence.mul(state_sizes, axis=0)).div(total_counts)
 
 
-
 # Visualizations
 demographics = state_grouped['Age'].mean()
 sex_distribution = state_grouped['Sex'].value_counts(normalize=True).unstack()
